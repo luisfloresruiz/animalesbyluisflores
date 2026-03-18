@@ -1,0 +1,128 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu de animales</title>
+    <style>
+       
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            background-color: #2c3e50;
+            display: flex; /* Alinea las columnas */
+        }
+
+        nav > ul > li {
+            position: relative;
+            flex: 1;
+            text-align: center;
+        }
+
+        nav a {
+            display: block;
+            padding: 15px;
+            color: white;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+        }
+
+        nav li:hover {
+            background-color: #34495e;
+        }
+
+        
+        .dropdown {
+            display: none;
+            position: absolute;
+            background-color: #ecf0f1;
+            width: 100%;
+            box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown li a {
+            color: #333;
+            font-weight: normal;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .dropdown li a:hover {
+            background-color: #bdc3c7;
+        }
+
+        
+        nav > ul > li:hover .dropdown {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+<p>
+<hr align="left" width="100%" Size="10" color="blue">
+
+<p class="b2">
+<marquee bgcolor="red" behavior="alternate">
+MENU DE ANIMALES
+</marquee>
+</p>
+
+<nav>
+    <ul>
+        <li>
+            <a href="#">Peces</a>
+            <ul class="dropdown">
+                <li><a href="pezdorado.html">Pez dorado</a></li>
+                <li><a href="guppy.html">Guppy</a></li>
+                <li><a href="pira.html">Piraña</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <a href="#">Mamíferos</a>
+            <ul class="dropdown">
+                <li><a href="tigre.html">Tigre</a></li>
+                <li><a href="jirafa.html">Jirafa</a></li>
+                <li><a href="oso.html">Oso</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <a href="#">Anfibios</a>
+            <ul class="dropdown">
+                <li><a href="ajolote.html">Ajolote</a></li>
+                <li><a href="sapo.html">Sapo</a></li>
+                <li><a href="rana.html">Rana</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <a href="#">Aves</a>
+            <ul class="dropdown">
+                <li><a href="flamenco.html">Flamenco</a></li>
+                <li><a href="pato.html">Pato</a></li>
+                <li><a href="colibri.html">Colibri</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <a href="#">Reptiles</a>
+            <ul class="dropdown">
+                <li><a href="dragondekomodo.html">Dragon de komodo</a></li>
+                <li><a href="toloc.html">Toloc</a></li>
+                <li><a href="lagarto.html">Lagarto</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <a href="#">Abeja Melipona</a>
+            <ul class="dropdown">
+                <li><a href="abeja.html">Info general</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+
+</body>
+</html>
